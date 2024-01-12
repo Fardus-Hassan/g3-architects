@@ -188,19 +188,17 @@ img {
     border-radius: 8px;
     position: absolute;
     bottom: -80px;
-     left: -80px;
+    left: -80px;
 }
 
 .badge h2 {
     font-size: 4rem;
     font-weight: 700;
-    line-height: 70px;
 }
 
 .badge p {
     font-size: 1.5625rem;
     font-weight: 500;
-    line-height: 40px;
 }
 
 
@@ -241,21 +239,46 @@ img {
     }
 
     .feature-text > div{
-        grid-template-columns: repeat(4, ifr);
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .feature-text, .feature-img{
+        width: 100%;
     }
 
     .feature-container{
         flex-direction: column;
-        gap: 50px;
-    }
-    .feature-img{
-        width: 50%;
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
     }
 
     .badge{
         position:static;
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height:100%;
+        padding: 5px 10px;
+        max-width: 30%;
     }
+
+    .badge h2{
+        font-size: 3rem;
+        margin-bottom: 5px;
+    }
+    .badge p{
+        font-size: 1.8rem;
+    }
+
+    .feature-img{
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    
 
 }
 
@@ -275,6 +298,15 @@ img {
     .team-text {
         text-align: right;
     }
+
+    .feature-text > div{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .team {
+        margin: 85px 0;
+    }
+    
+
 }
 
 @media screen and (max-width:768px) {
@@ -286,7 +318,12 @@ img {
     .nav>ul {
         margin-top: 50px;
     }
-
+    .badge h2{
+        font-size: 2rem;
+    }
+    .badge p{
+        font-size: 1rem;
+    }
 
 }
 
@@ -300,6 +337,15 @@ img {
         background: #FF900E;
         border: 0;
         padding: 15px 20px;
+    }
+
+    .feature-img{
+        display: block;
+    }
+
+    .badge{
+        display: block;
+        min-width: 100%;
     }
 
 }
@@ -323,6 +369,12 @@ img {
         padding: 0;
         gap: 50px;
     }
+
+    .feature-text > div{
+        grid-template-columns: 1fr;
+    }
+    
+  
 
 
 }
