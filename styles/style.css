@@ -149,7 +149,7 @@ img {
 .feature-container {
     display: flex;
     justify-content: space-between;
-    align-items:flex-start;
+    align-items: flex-start;
 }
 
 .feature-info {
@@ -162,6 +162,7 @@ img {
 
 .feature-img {
     width: 50%;
+    position: relative;
 }
 
 .feature-text {
@@ -185,19 +186,19 @@ img {
     padding: 45px 40px;
     display: inline-block;
     border-radius: 8px;
-    position: relative;
-    bottom: 125px;
-    right: 80px;
+    position: absolute;
+    bottom: -80px;
+     left: -80px;
 }
 
 .badge h2 {
-    font-size: 65px;
+    font-size: 4rem;
     font-weight: 700;
     line-height: 70px;
 }
 
 .badge p {
-    font-size: 25px;
+    font-size: 1.5625rem;
     font-weight: 500;
     line-height: 40px;
 }
@@ -214,6 +215,51 @@ img {
 
 
 /* responsive css */
+
+@media screen and (max-width:1440px){
+
+    .feature-text > div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .feature-container{
+        align-items: center;
+    }
+
+    .feature-info .common-description{
+        line-height: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width:1280px){
+
+    .feature-info{
+         margin: 0;
+    }
+
+    .feature-text > div{
+        grid-template-columns: repeat(4, ifr);
+    }
+
+    .feature-container{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .feature-img{
+        width: 50%;
+    }
+
+    .badge{
+        position:static;
+        display: block;
+    }
+
+}
+
+
 
 @media screen and (max-width:1024px) {
 
