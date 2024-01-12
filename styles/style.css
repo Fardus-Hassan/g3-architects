@@ -97,66 +97,110 @@ img {
     text-align: center;
 }
 
-.banner-text{
-   max-width: 53.875rem;
+.banner-text {
+    max-width: 53.875rem;
     margin: 0 auto;
 }
 
-.banner .common-heading{
+.banner .common-heading {
     font-size: 4rem;
 }
 
-.banner .banner-img{
-    margin-top: 50px ;
+.banner .banner-img {
+    margin-top: 50px;
 }
 
 /* team */
 
-.team{
+.team {
     margin: 85px 0 130px;
 }
 
-.team-container{
+.team-container {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     padding: 0 60px;
     gap: 75px;
 }
 
-.img-container{
+.img-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
     width: 50%;
 }
 
-.quick-list{
-    color:  #727272;
+.quick-list {
+    color: #727272;
     font-weight: 500;
 }
 
-.features{
-    color:  #FF900E;
+.features {
+    color: #FF900E;
 }
 
-.team-text{
+.team-text {
     width: 40%;
 }
 
+/* feature */
 
+.feature-container {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+}
 
+.feature-info {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-top: 20px;
+    padding: 30px;
+}
 
+.feature-img {
+    width: 50%;
+}
 
+.feature-text {
+    width: 40%;
+    margin-top: 50px;
+}
 
+.feature-info .common-description {
+    margin: 10px 0 0;
+}
 
+.feature-text>h3 {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
 
+.badge{
+    color: #FFF;
+    text-align: center;
+    background: #FF900E;
+    padding: 45px 40px;
+    display: inline-block;
+    border-radius: 8px;
+    position: relative;
+    bottom: 125px;
+    right: 80px;
+}
 
+.badge h2 {
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 70px;
+}
 
-
-
-
-
+.badge p {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 40px;
+}
 
 
 
@@ -172,35 +216,36 @@ img {
 /* responsive css */
 
 @media screen and (max-width:1024px) {
-    
-    .team-container{
+
+    .team-container {
         flex-direction: column;
     }
 
-    .team-text, .img-container{
+    .team-text,
+    .img-container {
         width: 100%;
     }
 
-    .team-text{
+    .team-text {
         text-align: right;
     }
 }
 
-@media screen and (max-width:768px){
-    
+@media screen and (max-width:768px) {
+
     .nav {
-      flex-direction: column;
+        flex-direction: column;
     }
 
-    .nav > ul{
+    .nav>ul {
         margin-top: 50px;
     }
-    
+
 
 }
 
-@media screen and (max-width:640px){
-    
+@media screen and (max-width:640px) {
+
     .btn-pm {
         color: #FFF;
         font-size: 1rem;
@@ -214,24 +259,24 @@ img {
 }
 
 
-@media screen and (max-width:576px){
-    
-    .banner .common-heading{
+@media screen and (max-width:576px) {
+
+    .banner .common-heading {
         font-size: 2.8rem;
     }
 
-    .banner-text{
+    .banner-text {
         width: 100%;
     }
 
-    .img-container{
+    .img-container {
         gap: 5px;
     }
 
-    .team-container{
+    .team-container {
         padding: 0;
         gap: 50px;
     }
-    
+
 
 }
