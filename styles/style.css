@@ -81,7 +81,8 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 3.1rem;
+    flex-wrap: wrap;
 }
 
 .nav ul li a {
@@ -107,4 +108,53 @@ img {
 
 .banner .banner-img{
     margin-top: 50px ;
+}
+
+
+
+
+
+/* responsive css */
+
+/* md devices */
+
+@media screen and (max-width:768px){
+    
+    .nav {
+      flex-direction: column;
+    }
+
+    .nav > ul{
+        margin-top: 50px;
+    }
+    
+
+}
+
+@media screen and (max-width:640px){
+    
+    .btn-pm {
+        color: #FFF;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 8px;
+        background: #FF900E;
+        border: 0;
+        padding: 15px 20px;
+    }
+
+}
+
+
+@media screen and (max-width:576px){
+    
+    .banner .common-heading{
+        font-size: 2.8rem;
+    }
+
+    .banner-text{
+        width: 100%;
+    }
+    
+
 }
