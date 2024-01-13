@@ -179,7 +179,7 @@ img {
     padding-left: 20px;
 }
 
-.badge{
+.badge {
     color: #FFF;
     text-align: center;
     background: #FF900E;
@@ -201,84 +201,111 @@ img {
     font-weight: 500;
 }
 
+/* facts */
 
+.facts {
+    margin: 160px 0;
+}
 
+.achievement {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    gap: 20px;
 
+}
 
+.jobs {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    padding: 45px 35px 60px;
+    text-align: center;
+}
 
+.jobs h4 {
+    color: #424242;
+    font-weight: 600;
+    margin-top: 10px;
+}
 
-
+.facts .container > p{
+    width: 550px;
+}
 
 
 
 
 /* responsive css */
 
-@media screen and (max-width:1440px){
+@media screen and (max-width:1440px) {
 
-    .feature-text > div{
+    .feature-text>div {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
 
-    .feature-container{
+    .feature-container {
         align-items: center;
     }
 
-    .feature-info .common-description{
+    .feature-info .common-description {
         line-height: 1.5rem;
     }
 
 }
 
-@media screen and (max-width:1280px){
+@media screen and (max-width:1280px) {
 
-    .feature-info{
-         margin: 0;
+    .feature-info {
+        margin: 0;
     }
 
-    .feature-text > div{
+    .feature-text>div {
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .feature-text, .feature-img{
+    .feature-text,
+    .feature-img {
         width: 100%;
     }
 
-    .feature-container{
+    .feature-container {
         flex-direction: column;
         gap: 25px;
         align-items: center;
         justify-content: center;
     }
 
-    .badge{
-        position:static;
+    .badge {
+        position: static;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        min-height:100%;
+        min-height: 100%;
         padding: 5px 10px;
         max-width: 30%;
     }
 
-    .badge h2{
+    .badge h2 {
         font-size: 3rem;
         margin-bottom: 5px;
     }
-    .badge p{
+
+    .badge p {
         font-size: 1.8rem;
     }
 
-    .feature-img{
+    .feature-img {
         display: flex;
         justify-content: center;
         gap: 5px;
     }
 
-    
+
 
 }
 
@@ -299,13 +326,14 @@ img {
         text-align: right;
     }
 
-    .feature-text > div{
+    .feature-text>div {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .team {
         margin: 85px 0;
     }
-    
+
 
 }
 
@@ -318,10 +346,12 @@ img {
     .nav>ul {
         margin-top: 50px;
     }
-    .badge h2{
+
+    .badge h2 {
         font-size: 2rem;
     }
-    .badge p{
+
+    .badge p {
         font-size: 1rem;
     }
 
@@ -339,11 +369,11 @@ img {
         padding: 15px 20px;
     }
 
-    .feature-img{
+    .feature-img {
         display: block;
     }
 
-    .badge{
+    .badge {
         display: block;
         min-width: 100%;
     }
@@ -370,11 +400,11 @@ img {
         gap: 50px;
     }
 
-    .feature-text > div{
+    .feature-text>div {
         grid-template-columns: 1fr;
     }
-    
-  
+
+
 
 
 }
