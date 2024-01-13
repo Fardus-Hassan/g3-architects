@@ -234,6 +234,44 @@ img {
     width: 550px;
 }
 
+/* sponsors */
+
+.sponsors{
+    margin: 20px 0 130px;
+}
+
+.sponsors-text{
+    text-align: center;
+}
+
+.sponsors-text > p{
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sponsors-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
