@@ -97,6 +97,10 @@ img {
     font-size: 1.125rem;
     font-weight: 500;
     line-height: 26px;
+    transition: 0.3s;
+}
+.nav ul li:hover a{
+    color: #ff8800;
 }
 
 .banner {
