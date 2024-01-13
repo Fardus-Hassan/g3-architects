@@ -378,6 +378,14 @@ img {
         min-width: 100%;
     }
 
+    .facts{
+        margin: 100px 0;
+    }
+
+    .achievement{
+        margin: 60px 0;
+    }
+
 }
 
 
@@ -404,7 +412,9 @@ img {
         grid-template-columns: 1fr;
     }
 
-
+    .facts .container > p{
+        width: 100%;
+    }
 
 
 }
